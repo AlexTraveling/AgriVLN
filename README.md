@@ -16,6 +16,7 @@ xiaobeizhao2002@163.com, lxq99725@163.com, chxin@cau.edu.cn, cqlixiang@cau.edu.c
 </div>
 
 ## Updates
+- [June 12th, 2026] The codes of the AgriVLN method are available in this repository.
 - [August 10th, 2025] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is available for reading on [arXiv](https://arxiv.org/abs/2508.07406).
 
 ## Overview
@@ -26,7 +27,32 @@ To bridge this gap, we propose the A2A benchmark, containing 1,560 episodes acro
 ![AgriVLN_method](asset/fig_method.jpeg)
 
 ## Quick Start
-Currently, the paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is under review as a conference submission. After the paper is published, we will make both the A2A benchmark and the AgriVLN method available as soon as possible.
+1. Download the codes of the AgriVLN.
+```bash
+git clone git@github.com:AlexTraveling/AgriVLN.git
+cd AgriVLN-main
+```
+
+2. Create a new conda environment, then install all the dependent packages.
+```bash
+conda create -n agrivln python=3.11
+conda activate agrivln
+pip install -r requirements.txt
+```
+
+3. Deploy the ollama environment following the [official guidance](https://github.com/ollama/ollama), then download the Large Language Model (LLM) and Vision-Language Model (VLM), for which we use DeepSeek-R1-32B and Qwen2.5-VL-32B as the default LLM and VLM, respectively.
+```bash
+ollama pull deepseek-r1:32b
+ollama pull qwen2.5vl:32b
+# if you want to use another model, just change the model name.
+```
+
+4. Run the homepage file to start the AgriVLN method.
+```bash
+python home_agrivln.py
+```
+
+5. The running results will be saved in the `/AgriVLN/runs` path.
 
 ## Acknowledgment
 This work is supported by the Sichuan Chengdu Modern Agricultural Industry Research Institute of China Agricultural University: Provincial and Municipal Agricultural Subsidy Funded Project; the Natural Science Foundation of Sichuan Province (2024NSFSC0389); and the Provincial and Municipal Agricultural Subsidy Special Funds for the Construction of CAU–SCCD Advanced Agricultural \& Industrial Institute. Thanks to Tbilisi, Baku and Kunming for the impressive traveling experiences, giving us a chilled vibe for experiment and writing. Thanks to Yuanquan Xu, the inspiration to us.
