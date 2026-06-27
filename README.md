@@ -42,9 +42,15 @@ pip install -r requirements.txt
 
 3. Deploy the ollama environment following the [official guidance](https://github.com/ollama/ollama), then download the Large Language Model (LLM) and Vision-Language Model (VLM), for which we use DeepSeek-R1-32B and Qwen2.5-VL-32B as the default LLM and VLM, respectively.
 ```bash
+# (optional) if you are in China, the download speed may be very slow. to solve this issue, you may try the following code.
+source /etc/network_turbo
+
+# download ollama
+curl -fsSL https://ollama.com/install.sh | sh
+
+# pull LLM and VLM
 ollama pull deepseek-r1:32b
 ollama pull qwen2.5vl:32b
-# if you want to use another model, just change the model name.
 ```
 
 4. Run the homepage file to start the AgriVLN method.
