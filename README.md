@@ -21,7 +21,7 @@ xiaobeizhao2002@163.com, lxq99725@163.com, chxin@cau.edu.cn, cqlixiang@cau.edu.c
 
 - [August 14th, 2026] Congratulations to us! The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is accepted by ICONIP 2026.
 - [June 12th, 2026] The codes of the AgriVLN method are available in this repository.
-- [May 28th, 2026] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is withdrawn from ACMMM 2026.
+- [May 28th, 2026] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is withdrawn by us from ACMMM 2026.
 - [March 5th, 2026] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is rejected by IJCAI 2026.
 - [November 8th, 2025] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is rejected by AAAI 2026.
 - [August 10th, 2025] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is available for reading on [arXiv](https://arxiv.org/abs/2508.07406).
