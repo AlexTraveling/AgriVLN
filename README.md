@@ -8,6 +8,7 @@
 xiaobeizhao2002@163.com, lxq99725@163.com, chxin@cau.edu.cn, cqlixiang@cau.edu.cn
 
 <p>
+  <a href="https://www.iconip2026.org/"><img src="https://img.shields.io/badge/Springer-ICONIP%202026-blue" alt="Springer ICONIP 2026"></a>
   <a href="https://arxiv.org/abs/2508.07406"><img src="https://img.shields.io/badge/arXiv-2508.07406-b31b1b" alt="arXiv"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
