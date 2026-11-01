@@ -13,7 +13,7 @@ xiaobeizhao2002@163.com, lxq99725@163.com, chxin@cau.edu.cn, cqlixiang@cau.edu.c
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
-![AgriVLN_teaser](asset/fig_teaser.jpeg)
+![AgriVLN_teaser](asset/fig_teaser_final.jpeg)
 </div>
 
 ## Updates
