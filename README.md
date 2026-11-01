@@ -25,11 +25,8 @@ xiaobeizhao2002@163.com, lxq99725@163.com, chxin@cau.edu.cn, cqlixiang@cau.edu.c
 - [November 8th, 2025] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is rejected by AAAI 2026.
 - [August 10th, 2025] The paper “AgriVLN: Vision-and-Language Navigation for Agricultural Robots” is available for reading on [arXiv](https://arxiv.org/abs/2508.07406).
 
-## Benchmark: Agriculture-to-Agriculture (A2A)
-
-<!-- ## 🏆 A2A Benchmark Leaderboard -->
-
-Agricultural robots are serving as powerful members across a wide range of agricultural tasks, nevertheless, still heavily relying on manual operations or railway systems for movement. Vision-and-Language Navigation (VLN) enables robots to navigate to the target destinations following natural language instructions, demonstrating strong performance on several domains. However, none of the existing benchmarks or methods is specifically designed for agricultural scenes. To bridge this gap, we propose the A2A benchmark, containing 1,560 episodes across six diverse agricultural scenes, in which all realistic RGB videos are captured by the front-facing camera on a quadruped robot at a height of 0.38 meters, aligning with the practical deployment conditions. 
+## The A2A Benchmark
+Agricultural robots are serving as powerful members across a wide range of tasks, nevertheless, they are still heavily relying on manual operations or railway systems for movement. In contrast, Vision-and-Language Navigation (VLN) enables navigating robots from starting points to target positions following natural language instructions, having shown strong performances across various domains. However, none of the existing benchmarks or methods are specifically designed for agricultural robots. To bridge this gap, we build our A2A benchmark, which consists of 1,560 episodes across 6 classes of agricultural scenes using the step-by-step format for instructions and the continuous environment for actions.
 
 <!-- The leaderboard presents the performance of state-of-the-art methods on the **A2A benchmark**. -->
 <!-- Methods are ranked by **Success Rate (SR)**, with **Navigation Error (NE)** reported as an additional metric. -->
@@ -53,8 +50,8 @@ Agricultural robots are serving as powerful members across a wide range of agric
 | 5 | Method E | — | LLaVA | XX.X | X.XX |
 | 6 | Method F | — | — | XX.X | X.XX | -->
 
-## Method: Vision-and-Language Navigation for Agricultural Robots (AgriVLN)
-We propose the AgriVLN method based on Vision-Language Model (VLM) prompted with carefully crafted templates, which can understand both given instructions and agricultural environments to generate appropriate low-level actions for robot control. When evaluated on A2A, AgriVLN performs well on short instructions but struggles with long instructions, because it often fails to track which part of the instruction is currently being executed. To address this, we further propose the STL module decomposing an instruction into a sequence of subtasks, to guide the decision-maker attending to the current active subtask. When integrated with STL, AgriVLN effectively improves on Success Rate (SR) from 0.33 to 0.47. We additionally compare AgriVLN with several existing methods, demonstrating the state-of-the-art performance in the agricultural VLN domain.
+## The AgriVLN Method
+We evaluate several existing state-of-the-art VLN methods on A2A, then we observe that they perform well on short instructions while perform poorly on long instructions. To alleviate this phenomenon, we design our STL module, which decomposes a complex instruction into a list of simple subtasks, thereby assisting the decision-maker to focus on the current short subtask rather than the entire long instruction at any time. We integrate STL into the NavGPT backbone to propose our AgriVLN method, achieving a sufficient improvement on SR from 0.33 to 0.47 with a slight sacrifice on NE from 2.76 m to 2.91 m.
 
 ![AgriVLN_method](asset/fig_method.jpeg)
 
